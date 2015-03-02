@@ -30,10 +30,10 @@ def user_input():
 	parser.add_argument('-f', '--file', help='file to attach', dest='file', type=str, required=True)
 	args = parser.parse_args()
 	
-	email_address 		= args.to
-	attachment 	  		= args.file
-	email_text 			= args.text
-	email_subject		= args.title
+	email_address 	= args.to
+	attachment 	  	= args.file
+	email_text		= args.text
+	email_subject	= args.title
 
 
 	#Check to see if the destination email address is valid
