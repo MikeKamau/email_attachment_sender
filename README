@@ -1,0 +1,22 @@
+PURPOSE OF SCRIPT
+==================
+This is a basic script that sends email with attachments from the command line, its been tested using gmail, but it should not be difficult to customize and use your prefered email service.
+
+SETUP
+==================
+Since google does not allow smtp logins, as they consider them "lesss secure", you have to allow this type of access, by:
+1. Logging into your gmail account
+2.Going to https://www.google.com/settings/security/lesssecureapps while logged in and enabling access for less secure apps.
+
+RUNNING THE SCRIPT
+==================
+You can run the script in two ways:
+1. python email_attachment_sender.py -d "destination_email_address" -t "email_subject" -m "email_message" -f "file_to_attach"
+
+2. Grant the script execute permissions then on your terminal:
+	(a) chmod +x email_attachment_sender.py
+	(b)./email_attachment_sender.py -d "destination_email_address" -t "email_subject" -m "email_message" -f "file_to_attach"
+
+OTHER USES
+================
+The info in the script can be hardcoded if all you wish to do is have an automated email script.
